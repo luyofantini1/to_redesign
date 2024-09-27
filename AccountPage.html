@@ -1,0 +1,132 @@
+<html lang="">
+<script type="text/javascript" src="moz-extension://be1b9879-4e1a-4e0b-9501-40b1a307f6d3/inject.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://accounts.google.com/gsi/client" async="" defer=""></script>
+    <link rel="shortcut icon" href="https://www.futbolada.com/resources?from=tournament&amp;name=155.png"
+        type="image/png">
+    <title>Debate - Primera División de Argentina</title>
+    <link rel="stylesheet" href="/resources/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer="defer" src="/assets/js/chunk-vendors.0f9795ce.js"></script>
+    <script defer="defer" src="/assets/js/app.e1cf70ee.js"></script>
+    <link href="/assets/css/app.28a873e9.css" rel="stylesheet">
+</head>
+
+<body><noscript><strong>We're sorry but futbolada doesn't work properly without JavaScript enabled. Please enable it to
+            continue.</strong></noscript>
+    <div id="app" data-v-app="">
+        <header id="header">
+            <div class="header__logo" id="space-logo"><a
+                    style="cursor: pointer; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display: flex; padding: 10px;"><img
+                        alt="Logo" style="height: 100%; width: 100%;"
+                        src="https://www.futbolada.com/resources?from=media&amp;name=logocom.png"></a></div>
+            <div class="header__account" id="space-account" data-v-5c833af0="">
+                <div style="width: 75%; display: flex; justify-content: center; align-items: center;"><button
+                        class="button" id="info" style="margin-right: 10px;">INFORMACIÓN</button><button class="button"
+                        id="salir">SALIR</button></div>
+            </div>
+        </header>
+        <div id="content">
+            <div class="account-section">
+                <aside id="confederations" style="width: 25%;"
+                    class="federation-section flex flex-col justify-center items-center ml-2">
+                    <section class="federation-buttons mb-2" style="width: 100%;">
+                        <h2 style="margin-bottom: 5px;">Confederaciones</h2><button class="federation-button"
+                            data-value="conmebol"><img class="flag-icon" alt="conmebol"
+                                src="https://www.sofascore.com/static/images/flags/south-america.png" width="25"
+                                height="25"><span>CONMEBOL</span></button><button class="federation-button"
+                            data-value="world"><img class="flag-icon" alt="world"
+                                src="https://www.sofascore.com/static/images/flags/international.png" width="25"
+                                height="25"><span>WORLD</span></button>
+                    </section>
+                    <section id="confg-buttons" class="confg-buttons" style="width: 100%;">
+                        <h2 style="margin-bottom: 5px;">Configuración</h2><button class="config-button"
+                            style="background-color: rgb(23, 64, 68);"><i
+                                class="fa-solid fa-tshirt mr-1"></i><span>Cambiar Equipo</span></button><button
+                            class="config-button" style="background-color: rgb(23, 64, 68);"><i
+                                class="fa-solid fa-user mr-1"></i><span>Cambiar Datos</span></button>
+                    </section>
+                </aside>
+                <section id="account-info" class="mt-4 account-info" style="color: black;">
+                    <article id="user" class="p-4 user-info">
+                        <header class="text-center items-center font-extrabold text-center border-2 border-transparent"
+                            style="font-size: 25px; display: flex; justify-content: center; align-items: center;"
+                            value="-CLRKM-">
+                            <h2>Usuario: <span id="user-name">Nombre de Usuario</span></h2>
+                        </header>
+                        <div id="status_acc" class="items-center font-extrabold text-center border-2 border-transparent"
+                            style="font-size: 15px; display: flex; align-items: center; justify-content: center;">
+                            <span>Tu cuenta está:</span><span id="verf_sp_Status"
+                                class="verified px-2 text-black uppercase transition border-2 border-current shadow-black bg-lime-600 disabled:bg-lime-800 disabled:border-gray-500 border-r-gray-950 border-b-gray-950 active:bg-lime-700 w-full py-1 sm:w-fit text-shadow-sm bold mt-1">
+                                Verificada ✅ </span></div>
+                        <article id="team-status"
+                            style="display:flex;flex-direction:column;width:100%;align-items:center;">
+                            <h3 class="items-center font-extrabold text-center border-2 border-transparent mt-2"
+                                style="font-size:15px;">Tu equipo actual es:</h3>
+                            <div class="team-logo mt-4"><img id="current-team" src="ruta/a/imagen-del-equipo.png"
+                                    alt="Imagen del equipo" width="150" height="150"></div>
+                            <h3 class="items-center font-extrabold text-center border-2 border-transparent mt-4"
+                                style="font-size:15px;"> Selecciona otro equipo:</h3>
+                        </article>
+                        <section id="container" class="mt-4 change-team-container">
+                            <div id="team-change" class="team-change">
+                                <div id="tournaments_container" style="width: 100%;">
+                                    <article
+                                        style="display: flex; width: 100%; height: 100%; align-items: center; justify-content: space-between; color: white; border: 2px solid black;"
+                                        class="tournament-title pb-2 pt-2 mb-3" data-value="liga_profesional_de_futbol">
+                                        <button class="fa-solid fa-arrow-left ml-2"
+                                            style="visibility: hidden;"></button><span>Primera División de
+                                            Argentina</span><button class="fa-solid fa-arrow-right mr-2"
+                                            style="visibility: hidden;"></button></article>
+                                </div>
+                                <div id="teams_container" class="grid grid-cols-5 gap-5 mb-5"></div>
+                                <div id="update_button" class="save-changes"><button id="send_update"
+                                        style="padding: 10px; background-color: rgb(23, 64, 68); color: white; border: medium; border-radius: 5px; cursor: pointer;">Guardar</button>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                </section>
+                <aside id="countries" style="width: 25%;"
+                    class="countries-section flex flex-col justify-center items-center mr-2">
+                    <section class="countries-buttons" style="width: 100%;">
+                        <h2 style="margin-bottom: 5px;">Países</h2>
+                        <div id="buttons-content-countries" data-value="CONMEBOL" style="display: block;">
+                            <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                                <button class="country-button" data-value="AR" style="width: 100%;"><img
+                                        class="flag-icon" alt="Argentina"
+                                        src="https://www.sofascore.com/static/images/flags/ar.png" width="25"
+                                        height="25"><span>Argentina</span></button></div>
+                            <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                                <button class="country-button" data-value="south-america" style="width: 100%;"><img
+                                        class="flag-icon" alt="Torneos CONMEBOL"
+                                        src="https://www.sofascore.com/static/images/flags/south-america.png" width="25"
+                                        height="25"><span>Torneos CONMEBOL</span></button></div>
+                        </div>
+                        <div id="buttons-content-countries" data-value="WORLD" style="display: none;">
+                            <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                                <button class="country-button" data-value="international" style="width: 100%;"><img
+                                        class="flag-icon" alt="Torneos FIFA"
+                                        src="https://www.sofascore.com/static/images/flags/international.png" width="25"
+                                        height="25"><span>Torneos FIFA</span></button></div>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+        <footer id="footer">
+            <p>Todos los Derechos Reservados ©</p>
+        </footer>
+    </div>
+    <div data-v-c6bdc170="" id="g_id_onload"
+        data-client_id="607414560293-0bai1in8nn7kteugb8chbm146dfpimi0.apps.googleusercontent.com" data-context="signin"
+        data-ux_mode="popup" data-callback="handleCredentialResponse" data-auto_prompt="false" style="display: none;">
+    </div>
+    <script src="/resources/js/all.js"></script>
+</body>
+
+</html>
