@@ -1,0 +1,640 @@
+.loader {
+  border:8px solid #f3f3f3;
+  border-top:8px solid #17573d;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  animation:spin 3s linear infinite;
+  margin:auto;
+  margin-top:0
+}
+.account-div {
+  position:fixed;
+  top:5%;
+  left:50%;
+  transform:translateX(-50%);
+  width:auto;
+  height:auto;
+  overflow-y:auto;
+  background-color:#174044;
+  text-align:center;
+  padding:10px;
+  color:#fff;
+  border:3px solid #000
+}
+.header__logo {
+  height:100%;
+  width:25%;
+  position:relative
+}
+.header__account {
+  height:100%;
+  width:25%;
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  align-items:center
+}
+@media (min-width:768px) {
+  body {
+    background-image:url(https://www.futbolada.com/resources?from=media&name=cae00672-139c-46b7-ae8e-fe22a976500e.jpg);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0
+  }
+  #app,
+  body {
+    max-width:1360px
+  }
+  #app {
+    font-family:Avenir,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    text-align:center;
+    color:#fff;
+    margin:0 auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    height:100%
+  }
+  #header {
+    width:100%;
+    height:52px;
+    background-color:#17573d;
+    text-align:left;
+    font-family:Roboto,sans-serif;
+    font-weight:700;
+    display:flex;
+    justify-content:space-between
+  }
+  #content {
+    flex:1
+  }
+  #content,
+  #footer {
+    display:flex;
+    align-items:center;
+    justify-content:center
+  }
+  #footer {
+    padding:10px;
+    text-align:center;
+    width:100%;
+    height:52px;
+    background-color:#17573d;
+    text-align:left;
+    font-family:Roboto,sans-serif;
+    font-weight:700
+  }
+}
+@media (max-width:767px) {
+  body {
+    background-color:#fff;
+    font-size:16px
+  }
+}
+@media (min-width:768px) {
+  .games[data-v-286fe26e] {
+    background-color:#174044;
+    color:#fff;
+    text-align:center;
+    padding:0 0;
+    border-top:0;
+    border:4px solid #000;
+    cursor:default;
+    max-width:100%;
+    margin-bottom:7px
+  }
+  .match[data-v-286fe26e] {
+    display:flex;
+    font-size:13.5px;
+    justify-content:space-between;
+    width:100%;
+    height:auto;
+    background-color:#fff;
+    color:#000
+  }
+  .font-bold[data-v-286fe26e] {
+    font-weight:700
+  }
+  .informacion[data-v-286fe26e] {
+    color:#fff;
+    background-color:#174044;
+    width:50%;
+    font-size:13px
+  }
+  .informacion[data-v-286fe26e],
+  .team[data-v-286fe26e] {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    cursor:default;
+    border:2px solid #000
+  }
+  .team[data-v-286fe26e] {
+    width:100%;
+    height:50%
+  }
+  .team-score[data-v-286fe26e] {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:13.3%;
+    text-align:center;
+    cursor:default;
+    border:2px solid #000
+  }
+  .local-score[data-v-286fe26e],
+  .visitor-score[data-v-286fe26e] {
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    border-bottom:2px solid #000;
+    width:100%;
+    display:flex;
+    height:100%
+  }
+  .manager[data-v-286fe26e] {
+    border:2px solid #000;
+    border-right:4px solid #000;
+    border-radius:0;
+    display:flex;
+    align-items:center;
+    width:35%;
+    height:100%;
+    justify-content:center;
+    border-bottom:2px solid red
+  }
+  .league-container[data-v-286fe26e] {
+    display:grid;
+    width:auto;
+    height:auto;
+    background-color:#174044;
+    text-align:center;
+    font-family:Roboto,sans-serif;
+    font-weight:700
+  }
+  .button-container[data-v-286fe26e] {
+    display:flex;
+    justify-content:space-evenly;
+    border-bottom:1px solid #000;
+    border-top:1px solid #000;
+    padding:5px 0
+  }
+  .button[data-v-286fe26e] {
+    border:4px solid #000;
+    padding:5px;
+    width:10%;
+    background:transparent;
+    color:#fff;
+    text-align:center;
+    cursor:pointer
+  }
+  .league-info-container[data-v-286fe26e] {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border:2px solid #000;
+    border-left:0;
+    border-right:0;
+    padding:5px 0
+  }
+  .league-info[data-v-286fe26e] {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100%
+  }
+  .league-icon[data-v-286fe26e] {
+    width:25px;
+    height:25px;
+    margin-right:.5rem
+  }
+  .buttons-match-group[data-v-286fe26e] {
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center
+  }
+  .matches-container[data-v-286fe26e] {
+    border:2px solid #000;
+    border-left:0;
+    border-right:0;
+    padding-top:5px
+  }
+  .match-button[data-v-286fe26e] {
+    border:2px solid #000;
+    border-right:4px solid #000;
+    border-radius:0;
+    display:flex;
+    align-items:center;
+    width:35%;
+    height:100%;
+    justify-content:center;
+    border-bottom:2px solid red
+  }
+  .title[data-v-286fe26e] {
+    margin-bottom:1rem;
+    margin-top:1rem
+  }
+  .buttons-content[data-v-286fe26e] {
+    display:block
+  }
+  .country-button[data-v-286fe26e]:hover {
+    background-color:#1f5b71
+  }
+  .flag-icon[data-v-286fe26e] {
+    margin-right:.5rem
+  }
+  .countries-section[data-v-286fe26e],
+  .federation-section[data-v-286fe26e] {
+    width:25%;
+    padding:5px;
+    height:-moz-fit-content;
+    height:fit-content
+  }
+  #homeContent[data-v-286fe26e] {
+    justify-content:center;
+    display:flex;
+    margin-top:1rem
+  }
+  #homeMainContent[data-v-286fe26e] {
+    height:auto;
+    width:75%;
+    --tw-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+    box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    padding:5px
+  }
+  .flex[data-v-286fe26e] {
+    display:flex
+  }
+  .justify-center[data-v-286fe26e] {
+    justify-content:center
+  }
+  .items-center[data-v-286fe26e] {
+    align-items:center
+  }
+  .mt-4[data-v-286fe26e] {
+    margin-top:1rem
+  }
+  .mr-2[data-v-286fe26e] {
+    margin-right:.5rem
+  }
+  .ml-2[data-v-286fe26e] {
+    margin-left:.5rem
+  }
+  .countries-buttons[data-v-286fe26e],
+  .federation-buttons[data-v-286fe26e] {
+    display:flex;
+    align-items:normal;
+    flex-direction:column;
+    width:100%;
+    border:0
+  }
+  .container[data-v-286fe26e] {
+    display:grid;
+    width:auto;
+    height:auto;
+    background-color:#174044;
+    text-align:center;
+    font-family:Roboto,sans-serif;
+    font-weight:700;
+    border:4px solid #000;
+    color:#fff;
+    padding:10px
+  }
+  .container h2[data-v-286fe26e] {
+    margin-bottom:10px;
+    margin-top:10px
+  }
+  .country-button[data-v-286fe26e],
+  .federation-button[data-v-286fe26e] {
+    padding:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:5px;
+    width:100%;
+    text-align:center;
+    font-family:Roboto,sans-serif;
+    background-color:#174044;
+    color:#fff;
+    border-radius:5px;
+    cursor:pointer;
+    border:2px solid #000
+  }
+  .federation-button img[data-v-286fe26e] {
+    margin-right:5px;
+    width:25px;
+    height:25px
+  }
+  .federation-button span[data-v-286fe26e] {
+    margin-left:5px
+  }
+}
+@media (max-width:767px) {
+  body[data-v-286fe26e] {
+    background-color:#fff;
+    font-size:16px
+  }
+}
+.hidden[data-v-286fe26e] {
+  display:none
+}
+@font-face {
+  font-family:Informal-11;
+  src:url(/assets/fonts/informal-011-black-bt.fa5846e3.ttf) format("truetype");
+  font-weight:400;
+  font-style:normal
+}
+@media (min-width:768px) {
+  .league-container {
+    display:grid;
+    width:auto;
+    height:auto;
+    background-color:#174044;
+    text-align:center;
+    font-family:Roboto,sans-serif;
+    font-weight:700
+  }
+  .league-info-container {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:4px solid #000;
+    padding:5px 0
+  }
+  .league-info {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100%
+  }
+  .league-icon {
+    width:25px;
+    height:25px;
+    margin-right:.5rem
+  }
+  .match {
+    display:flex;
+    font-size:13.5px;
+    justify-content:space-between;
+    width:100%;
+    height:auto;
+    background-color:#fff;
+    color:#000
+  }
+  .informacion {
+    color:#fff;
+    background-color:#174044;
+    width:50%;
+    font-size:13px
+  }
+  .informacion,
+  .team {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    cursor:default;
+    border:2px solid #000
+  }
+  .team {
+    width:100%;
+    height:50%
+  }
+  .team-score {
+    width:13.3%;
+    cursor:default;
+    border:2px solid #000
+  }
+  .local-score,
+  .team-score,
+  .visitor-score {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center
+  }
+  .local-score,
+  .visitor-score {
+    border-bottom:2px solid #000;
+    width:100%;
+    height:100%
+  }
+  .manager {
+    border:2px solid #000;
+    border-right:4px solid #000;
+    border-radius:0;
+    width:35%;
+    height:100%;
+    justify-content:center;
+    border-bottom:2px solid red
+  }
+  .buttons-match-group,
+  .manager {
+    display:flex;
+    align-items:center
+  }
+  .buttons-match-group {
+    flex-wrap:nowrap
+  }
+  .archive-button {
+    background-color:#17573d;
+    height:auto;
+    width:auto;
+    position:absolute;
+    bottom:0;
+    right:0;
+    opacity:.5
+  }
+  .dropdown-menu {
+    display:none;
+    position:absolute;
+    background-color:#f9f9f9;
+    min-width:160px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,.2);
+    z-index:1
+  }
+  .match-button {
+    border:2px solid #000;
+    border-right:4px solid #000;
+    border-radius:0;
+    display:flex;
+    align-items:center;
+    width:35%;
+    height:100%;
+    justify-content:center;
+    border-bottom:2px solid red
+  }
+  .dropdown-menu a {
+    color:#000;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block
+  }
+  .dropdown-menu a:hover {
+    background-color:#f1f1f1
+  }
+  .dropdown.open .dropdown-menu {
+    display:block
+  }
+  .dropdown-toggle {
+    background-color:#3498db;
+    color:#fff;
+    padding:10px 24px;
+    border:none;
+    cursor:pointer
+  }
+  .dropdown-toggle:hover {
+    background-color:#2980b9
+  }
+  .users-counter {
+    align-items:center;
+    width:auto;
+    height:auto;
+    background-color:#174044;
+    text-align:left;
+    font-family:Roboto,sans-serif;
+    font-weight:700;
+    padding:10px;
+    border:2px solid #000;
+    margin-right:2px;
+    border-radius:20%;
+    color:#fff;
+    cursor:default
+  }
+  .principal-section,
+  .users-counter {
+    display:flex;
+    justify-content:center
+  }
+  .principal-section {
+    width:100%;
+    margin-top:1rem
+  }
+  .messages-section,
+  .second-section {
+    width:50%;
+    margin:2.5px
+  }
+  .button {
+    border:none;
+    border-radius:5px;
+    cursor:pointer
+  }
+  .button,
+  .media-div {
+    padding:10px;
+    background-color:#174044;
+    color:#fff
+  }
+  .media-div {
+    position:fixed;
+    top:5%;
+    left:50%;
+    transform:translateX(-50%);
+    width:auto;
+    height:auto;
+    overflow-y:auto;
+    text-align:center;
+    border:3px solid #000
+  }
+  .account-section {
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:1rem
+  }
+  .countries-section,
+  .federation-section {
+    width:25%;
+    padding:5px;
+    height:-moz-fit-content;
+    height:fit-content
+  }
+  .confg-buttons,
+  .countries-buttons,
+  .federation-buttons {
+    display:grid;
+    width:auto;
+    height:auto;
+    background-color:#174044;
+    text-align:center;
+    font-family:Roboto,sans-serif;
+    font-weight:700;
+    border:4px solid #000;
+    color:#fff;
+    padding:10px
+  }
+  .left-section,
+  .right-section {
+    width:25%;
+    padding:5px;
+    flex-direction:column;
+    height:-moz-fit-content;
+    height:fit-content;
+    display:flex;
+    justify-content:center;
+    margin-right:.5rem
+  }
+  .account-info {
+    height:auto;
+    width:50%
+  }
+  .user-info {
+    background-color:#e0e0e0;
+    width:100%;
+    height:auto
+  }
+  .verified {
+    display:block;
+    text-align:center;
+    visibility:visible;
+    background-color:#00ff97;
+    font-size:13px;
+    width:20%;
+    margin-left:5px;
+    padding:2px 1px
+  }
+  .config-button,
+  .country-button,
+  .federation-button {
+    border-radius:5%;
+    border:2px solid #000;
+    padding:5px;
+    background-color:#174044;
+    color:#fff;
+    cursor:pointer;
+    justify-content:center;
+    display:flex;
+    margin-bottom:.25rem
+  }
+  .container {
+    display:grid;
+    width:auto;
+    height:auto;
+    text-align:center;
+    border:4px solid #000;
+    color:#fff;
+    padding:10px
+  }
+  .container,
+  .tournament-title {
+    background-color:#174044;
+    font-family:Roboto,sans-serif;
+    font-weight:700
+  }
+  .tournament-title {
+    text-align:left
+  }
+}
